@@ -5,7 +5,6 @@
 }
 
 *{
-
   margin: 0;
   padding: 0;
   font: inherit;
@@ -14,7 +13,7 @@
 }
 
 :root{
-  --background-color: #09090b;
+  --bg-color: #09090b;
   --surface-color: #18181b;
   --stroke-color: #27272a;
   --text-color-secondary: #a1a1aa;
@@ -48,7 +47,7 @@ html{
 }
 
 body{
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
 }
 
 h1, h2, h3{
@@ -88,13 +87,11 @@ a:hover{
 }
 
 ul[role="list"]{
-list-style: none;
-
-
+  list-style: none;
 }
 
 @media(width >= 80em){
-  :root{
+  :root {
     --fs-lg: 2rem;
     --fs-xl: 3rem;
     --fs-2xl: 4rem;

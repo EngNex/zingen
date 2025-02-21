@@ -14,7 +14,9 @@
   padding-inline: var(--px-lg); /*Padding-inline - Axis horizontal*/
 }
 .container{
+  /*border: solid 1px #ff00ff;*/
   --max-width: 375px;
+  margin-inline: auto;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
 }
 
@@ -31,8 +33,16 @@
   display: flex;
 }
 
+.items-center{
+  align-items: center;
+}
+
 .gap-1{
   gap: 1rem;
+}
+
+.gap-1\.5{
+  gap: 1.5rem;
 }
 
 .grid{
@@ -41,10 +51,10 @@
 
 @media (width >= 80em){ /*Media query for screen desktop - using mobile first*/
   .container{
-    max-width: 80rem;
+    --max-width: 80rem;
   }
   .desktop-only{
-    display: initial;
+    display: block;
   }
   .even-columns{
     grid-auto-flow: column;
